@@ -1,0 +1,2 @@
+CREATE INDEX "nv_encounter_idx" ON "note_versions" USING btree ("encounter_id");--> statement-breakpoint
+ALTER TABLE "note_versions" ADD CONSTRAINT "uniq_encounter_version" UNIQUE("encounter_id","version_number");
